@@ -23,16 +23,16 @@ after_success:
 
 deploy:
   edge: true,
-  provider: elasticbeanstalk,
-  region: us-west-1,
-  app: multi-docker,
-  env: MultiDocker-env,
+  provider: elasticbeanstalk
+  region: "us-west-1"
+  app: "multi-docker"
+  env: "MultiDocker-env"
   bucket_name: "elasticbeanstalk-us-west-1-753234793297"
-  bucket-path: docker-multi
+  bucket-path: "docker-multi"
   on: 
     branch: master
   access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY
+  secret_access_key: $AWS_SECRET_KEY 
 
 
   
